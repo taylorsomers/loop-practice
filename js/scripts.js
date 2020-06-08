@@ -12,14 +12,12 @@
 //   });
 // });
 
-let array = [["h1", "header"], ["p", "paragraph"], ["img", "image"]];
-  array.forEach(function(element, display) {
-  $(element).click(function() {
-    
-    if (element === "h1" || "P") {
-    alert("This is a " + display);
-    } else {
-    alert("This is an " + display);
-    }
+$(document).ready(function() {
+  const array = [("h1","a header"),("p","a paragraph"),("img","an image")];
+    array.forEach(function(element) {
+    let element = [];
+    $(element[0]).click(function() {
+      alert("This is " + element[1]);
+    });
   });
 });
